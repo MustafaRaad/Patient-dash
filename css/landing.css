@@ -6,30 +6,7 @@
   margin: 0;
   width: 100%;
 }
-.log {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px 0 30px;
-  box-shadow: 0px 0px 10px #e1e1e1;
-  width: 100%;
-  border-radius: 10px;
-}
-.log-l {
-  width: 50%;
-  margin: auto;
-}
-.log-l > img {
-  width: 50px;
-  padding: 5px;
-}
-.log-r {
-  width: 50%;
-  display: flex;
-  height: fit-content;
-  justify-content: flex-end;
-  margin: auto;
-}
+
 .welcoming {
   text-align: center;
   width: 100%;
