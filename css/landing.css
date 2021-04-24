@@ -81,7 +81,17 @@
     font-size: 11px;
   }
 }
-
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */

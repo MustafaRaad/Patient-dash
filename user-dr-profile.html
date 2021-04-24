@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dr-profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard.html"><img src="imgs/logo.png" alt="" /> </a>
+          </li>
+        </ul>
+        <ul class="end">
+            <li>
+            <a href="dashboard.html" class="main-text-color">Home</a>
+          </li>
+          <li>
+            <a href="#" class="main-text-color">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn main-text-color">
+                UserName
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="pages">
+        <a href="dashboard.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="user-doctors-list.html">Doctors list</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="user-dr-profile.html">Doctor details</a>
+
+      </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img
+                class="dr-avatar"
+                src="imgs/2.png"
+                alt=""
+                width="300px"
+                height="300px"
+              />
+            </div>
+            <div class="col w-100" style=" justify-content: flex-start;">
+              <div class="row">
+                <div class="col">
+                  <div class="text-a">Name</div>
+                  <div class="text-p">Name</div>
+                </div>
+                <div class="col">
+                  <div class="text-a">Graduated Year</div>
+                  <div class="text-p">Graduated Year</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="text-a">Birthdate</div>
+                  <div class="text-p">Birthdate</div>
+                </div>
+                <div class="col">
+                  <div class="text-a">Specification</div>
+                  <div class="text-p">Specification</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr">
+        <p>More about <span>Name</span></p>
+        <ol>
+          <li>123
+            4654
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+        <div class="row">
+          <a href="#" class="btn main-color"> Take appointment</a>
+          <a href="#" class="btn main-color"> Take appointment</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

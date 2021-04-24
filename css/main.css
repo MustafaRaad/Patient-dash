@@ -66,7 +66,7 @@ section {
   background-color: white;
   justify-content: space-around;
   border-radius: 15px;
-  padding: 5%;
+  padding: 3%;
 }
 
 .row {
@@ -75,6 +75,33 @@ section {
   justify-content: space-around;
   margin: 20px;
 }
+.col {
+  width: 50%;
+  text-align: left;
+  padding: 5px;
+}
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-100 {
+  width: 100%;
+}
+
 .btn {
   margin: 10px;
   border: none;
@@ -88,82 +115,68 @@ section {
   cursor: pointer;
 }
 .main-color {
-  background-color: #8274ea;
+  background-color: #3498db;
 }
 
 .main-color:hover {
-  background-color: #5b50a8;
+  background-color: #2980b9;
   transition: 0.3s;
   color: #fff;
 }
 .main-text-color {
-  color: #8274ea;
+  color: #3498db;
 }
 .main-text-color:hover {
   transition: 0.3s;
-  color: #5b50a8;
+  color: #2980b9;
 }
 .accent-color {
-  background-color: #00cec9;
+  background-color: #1abc9c;
 }
 .accent-color:hover {
-  background-color: #017775;
+  background-color: #16a085;
   transition: 0.3s;
   color: #fff;
 }
 .accent-text-color {
-  color: #00cec9;
+  color: #1abc9c;
 }
 .accent-text-color:hover {
   transition: 0.3s;
-  color: #017775;
+  color: #16a085;
 }
-/* Full-width inputs */
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
+
 .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #8274ea; /* fallback for old browsers */
+  background: #3498db; /* fallback for old browsers */
   box-shadow: 0 0 10px #b4b4b4;
   margin: auto 10px;
   padding: 30px;
   border-radius: 10px;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   text-decoration: none;
   color: #303030;
-  font-size: 25pt;
-  padding: 5%;
+  padding: 1%;
 }
 .card:hover {
-  background: #8b85bd; /* fallback for old browsers */
+  background: #2980b9; /* fallback for old browsers */
 }
 .card > .title {
   margin: 10px;
+  font-size: 15pt;
 }
 .card > i {
   margin: 10px;
-  padding: 25px;
   border-radius: 100%;
-  background-color: #ccc;
+  font-size: 30pt;
 }
 
-.w100 {
-  width: 100%;
-}
 .hr {
-  border-top: 1px solid #df6d6d;
+  border: 1px solid #df6d6d;
   width: 75%;
 }
 
@@ -172,7 +185,6 @@ input[type="password"] {
   outline: none;
   background-color: inherit;
   margin: 0;
-  
 }
 
 .dropdown-content {
@@ -202,4 +214,38 @@ input[type="password"] {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.pages {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+.pages > a {
+  text-decoration: none;
+  color: #757575 !important;
+}
+.pages > i {
+  color: #757575 !important;
+}
+@media only screen and (max-width: 500px) {
+  * {
+    font-size: 10pt;
+  }
+  nav ul li a {
+    font-size: 10pt;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  .row {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .card {
+    flex-direction: column;
+    margin: 1px;
+  }
+  .g-container {
+    width: 100%;
+  }
 }
