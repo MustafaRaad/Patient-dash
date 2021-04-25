@@ -29,6 +29,9 @@
             <a href="dashboard.html" class="main-text-color">Home</a>
           </li>
           <li>
+            <a href="user-about.html" class="main-text-color">About us</a>
+          </li>
+          <li>
             <a href="#" class="main-text-color">Contact</a>
           </li>
           <li>
@@ -54,9 +57,14 @@
         <!-- --------------------------- -->
         <form action="">
           <label for="name">Name</label>
-          <input type="text" name="name" id="" />
+          <input type="text" name="name" id="" required />
           <label for="disc">Discription</label>
-          <textarea name="disc" id="" cols="30" rows="8"></textarea>
+          <textarea name="disc" id="" cols="30" rows="8" required></textarea>
+          <label for="date">Date</label>
+          <input type="date" name="date" id="" required />
+      <label for="time">Time</label>
+          <input type="time" name="time" id="" required />
+
           <label for="file">Upload file</label>
           <input type="file" name="file" id="" class="btn accent-color" />
           <button type="submit" class="btn main-color w-60">Save</button>

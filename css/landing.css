@@ -83,9 +83,11 @@
 }
 /* Full-width inputs */
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="date"] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 7px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -109,7 +111,7 @@ input[type="password"] {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 7% auto; /* 15% from the top and centered */
+  margin: 2% auto; /* 15% from the top and centered */
   padding: 30px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
@@ -140,6 +142,9 @@ input[type="password"] {
 /* Avatar image */
 img.avatar {
   width: 25%;
+}
+.gender-div{
+  margin: 15px auto;
 }
 
 /* Change styles for span and cancel button on extra small screens */

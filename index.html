@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-       <nav>
+      <nav>
         <ul>
           <li>
             <a href="#"><img src="imgs/logo.png" alt="" /> </a>
@@ -26,9 +26,9 @@
         </ul>
         <ul class="end">
           <li>
-                <button  class="btn main-color">
-            <a href="dashboard.html">dash</a>
-          </button>
+            <button class="btn main-color">
+              <a href="dashboard.html">dash</a>
+            </button>
           </li>
           <li>
             <button id="log-btn" class="btn main-color">Login</button>
@@ -84,7 +84,13 @@
           <form action="action_page.php" method="post">
             <label for="uname"><b>Name</b></label>
             <input type="text" placeholder="Enter Name" name="name" required />
-
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              placeholder="Enter email"
+              name="email"
+              required
+            />
             <label for="psw"><b>Password</b></label>
             <input
               type="password"
@@ -92,13 +98,51 @@
               name="psw"
               required
             />
+            <label for="phone"><b>Phone number</b></label>
+            <input
+              type="text"
+              placeholder="Enter phone"
+              name="phone"
+              required
+            />
+
+            <label for="address"><b>Address</b></label>
+            <input
+              type="text"
+              placeholder="Enter address"
+              name="address"
+              required
+            />
+            <div class="row">
+              <label for="gender"><b>Gender</b></label>
+              <div class="gender-div">
+                <label for="gender">Male</label>
+                <input
+                  type="radio"
+                  placeholder="Enter gender"
+                  name="gender"
+                  required
+                />
+                <label for="gender">Female</label>
+                <input
+                  type="radio"
+                  placeholder="Enter gender"
+                  name="gender"
+                  required
+                />
+              </div>
+              <label for="date"><b>Birthdate</b></label>
+              <input
+                type="date"
+                placeholder="Enter Name"
+                name="name"
+                required
+              />
+            </div>
 
             <button type="submit" class="btn accent-color w-100">
               Register
             </button>
-            <div>
-              <span> <a href="#"> Forgot password?</a></span>
-            </div>
           </form>
         </div>
       </div>
@@ -134,10 +178,6 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
-      </div>
-      <div>
-        <h1>About us</h1>
-        <p>About us</p>
       </div>
     </div>
 

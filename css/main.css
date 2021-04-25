@@ -227,6 +227,13 @@ section {
 .pages > i {
   color: #757575 !important;
 }
+.in{
+
+}
+.s-a {
+  font-size: 20px;
+  margin:10px;
+}
 @media only screen and (max-width: 500px) {
   * {
     font-size: 10pt;
