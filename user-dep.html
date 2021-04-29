@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard.html"><img src="imgs/logo.png" alt="" /> </a>
+          </li>
+        </ul>
+        <ul class="end">
+          <li>
+            <a href="dashboard.html" class="main-text-color">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="main-text-color">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="main-text-color">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn main-text-color">
+                UserName
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="pages">
+        <!-- -----------------------if user | admin | doctor ------------------ -->
+        <a href="dashboard.html">User's Dashboard</a>
+      </div>
+      <section>
+        <!-- -----------------------if user ------------------ -->
+        <!-- -----------------row------------------ -->
+        <div class="row">
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-tooth"></i>
+            <h1 class="title">Dentistry</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-eye"></i>
+            <h1 class="title">Ophthalmology</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-deaf"></i>
+            <h1 class="title">Ear, nose and throat (ENT)</h1>
+          </a>
+        </div>
+        <div class="row">
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-heartbeat"></i>
+            <h1 class="title">Cardiology</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-bone"></i>
+            <h1 class="title">Orthopedics</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-burn"></i>
+            <h1 class="title">Hematology</h1>
+          </a>
+        </div>
+        <div class="row">
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-lungs"></i>
+            <h1 class="title">Internal Medicine</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-project-diagram"></i>
+            <h1 class="title">Neurology</h1>
+          </a>
+          <a class="card" href="user-doctors-list.html">
+            <i class="fas fa-viruses"></i>
+            <h1 class="title">Oncology</h1>
+          </a>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
