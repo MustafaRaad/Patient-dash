@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard.html"><img src="imgs/logo.png" alt="" /> </a>
+          </li>
+        </ul>
+        <ul class="end">
+          <li>
+            <a href="dashboard.html" class="main-text-color">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="main-text-color">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="main-text-color">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn main-text-color">
+                UserName
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="pages">
+        <!-- -----------------------if user | admin | doctor ------------------ -->
+        <a href="dashboard.html">Profile</a>
+      </div>
+      <section>
+        <div class="row">
+          <img src="imgs/avatar.svg" alt="Avatar" class="avatar" />
+        </div>
+        <div class="row">
+          <input type="text" placeholder="UserName" class="input" />
+        </div>
+        <div class="row">
+          <p>Any title</p>
+        </div>
+        <div class="row">
+          <p>(Select) import css file named forms.css</p>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
