@@ -1,0 +1,6 @@
+.fc-event{
+  background-color: rgb(245, 53, 53)!important;
+}
+.fc-event, .fc-event:hover, .ui-widget .fc-event{
+  color: black!important;
+}

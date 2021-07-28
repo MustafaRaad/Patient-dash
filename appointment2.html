@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/appointment.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link href="/css/appt.css" type="text/css" rel="stylesheet" />
+    <script src="js/daypilot-all.min.js"></script>
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li>
+            <a href="dashboard.html"><img src="imgs/logo.png" alt="" /> </a>
+          </li>
+        </ul>
+        <ul class="end">
+          <li>
+            <a href="dashboard.html" class="main-text-color">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="main-text-color">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="main-text-color">Contact</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn main-text-color">
+                UserName
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="pages">
+        <!-- -----------------------if user | admin | doctor ------------------ -->
+        <a href="appointment.html">Appointment</a>
+      </div>
+      <section>
+        <templateid="content" >
+          <!-- /top -->
+
+          <div style="display: flex">
+            <div style="margin-right: 10px">
+              <div id="nav"></div>
+            </div>
+            <div style="flex-grow: 1">
+              <div id="dp"></div>
+            </div>
+          </div>
+
+          <div id="print"></div>
+
+          <script type="text/javascript">
+            var nav = new DayPilot.Navigator("nav");
+            nav.showMonths = 3;
+            nav.selectMode = "week";
+            nav.onTimeRangeSelected = function (args) {
+              dp.startDate = args.start;
+              dp.update();
+            };
+            nav.init();
+
+            var dp = new DayPilot.Calendar("dp");
+
+            // view
+            dp.viewType = "Week";
+
+            // event creating
+            dp.onTimeRangeSelected = function (args) {
+              var name = prompt("New event name:", "Event");
+              if (!name) return;
+              var e = new DayPilot.Event({
+                start: args.start,
+                end: args.end,
+                id: DayPilot.guid(),
+                text: name,
+              });
+              dp.events.add(e);
+              dp.clearSelection();
+            };
+
+            dp.onEventClick = function (args) {
+              alert("clicked: " + args.e.id());
+            };
+
+            dp.init();
+
+            var e = new DayPilot.Event({
+              start: DayPilot.Date.today().addHours(12),
+              end: DayPilot.Date.today().addHours(15),
+              id: DayPilot.guid(),
+              text: "Special event",
+            });
+            dp.events.add(e);
+          </script>
+
+          <!-- bottom -->
+        </template>
+        <div class="row">
+          <div class="w-50">
+            <input type="date" name="" id="" />
+            <input type="time" name="" id="" />
+          </div>
+          <textarea name="cal" id="cal" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" class="btn main-color" value="Add Appointment" />
+      </section>
+      <script src="/js/appointment.js"></script>
+    </main>
+  </body>
+</html>
